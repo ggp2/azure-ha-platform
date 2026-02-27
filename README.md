@@ -1,18 +1,5 @@
-\# 🚀 Azure HA Platform
+# 🚀 Azure HA Platform
 
-
-
-!\[Terraform](https://img.shields.io/badge/Terraform-IaC-623CE4?logo=terraform)
-
-!\[Azure](https://img.shields.io/badge/Microsoft-Azure-0078D4?logo=microsoftazure)
-
-!\[Docker](https://img.shields.io/badge/Docker-Container-2496ED?logo=docker)
-
-!\[GitHub Actions](https://img.shields.io/badge/GitHub-Actions-2088FF?logo=githubactions)
-
-!\[VMSS](https://img.shields.io/badge/Azure-VMSS-blue)
-
-!\[Monitoring](https://img.shields.io/badge/Azure-Monitor-green)
 
 
 
@@ -29,7 +16,7 @@ Infrastructure entièrement automatisée via \*\*Terraform\*\* et déployée via
 ---
 
 ## 🏗 Architecture
-
+```
 Internet
 ↓
 Azure Load Balancer
@@ -39,6 +26,7 @@ VM Scale Set (2–5 instances)
 Application Docker (Nginx)
 ↓
 Azure Monitor / Log Analytic
+```
 ---
 
 ## ⚙️ Fonctionnalités Implémentées
