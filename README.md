@@ -16,6 +16,10 @@ Infrastructure entièrement automatisée via \*\*Terraform\*\* et déployée via
 ---
 
 ## 🏗 Architecture
+
+![Uploading AZURE.png…]()
+
+
 ```
 Internet
 ↓
