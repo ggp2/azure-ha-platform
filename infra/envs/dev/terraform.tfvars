@@ -11,9 +11,10 @@ tags = {
 }
 
 admin_username = "azureuser"
-ssh_public_key = "C:/Users/provi/.ssh/id_rsa_azure_ha.pub"
+
+ssh_public_key_path = "C:/Users/provi/.ssh/id_rsa_azure_ha.pub"
 
 instance_count = 2
 vm_sku         = "Standard_D2s_v6"
 
-container_image = "nginx:alpine"
+container_image = "ghcr.io/ggp2/azure-ha-platform:latest"

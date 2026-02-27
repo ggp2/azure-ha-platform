@@ -9,3 +9,8 @@ output "backend_pool_id" {
 output "health_probe_id" {
   value = azurerm_lb_probe.http.id
 }
+
+
+output "lb_id" {
+  value = azurerm_lb.lb.id
+}

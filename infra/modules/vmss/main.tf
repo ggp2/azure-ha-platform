@@ -14,7 +14,8 @@ resource "azurerm_linux_virtual_machine_scale_set" "vmss" {
   instances = var.instance_count
 
   admin_username = var.admin_username
-  upgrade_mode   = "Manual" # simple et stable pour l'étape 4
+  upgrade_mode   = "Rolling" #
+  health_probe_id = var.health_probe_id
 
   admin_ssh_key {
     username   = var.admin_username
@@ -27,6 +28,13 @@ resource "azurerm_linux_virtual_machine_scale_set" "vmss" {
     sku       = "22_04-lts-gen2"
     version   = "latest"
   }
+
+rolling_upgrade_policy {
+  max_batch_instance_percent              = 50
+  max_unhealthy_instance_percent          = 50
+  max_unhealthy_upgraded_instance_percent = 50
+  pause_time_between_batches              = "PT0S"
+}
 
   os_disk {
     caching              = "ReadWrite"
