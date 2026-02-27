@@ -1,3 +1,5 @@
+# trigger CI/CD
+
 output "rg_name" { value = module.network.rg_name }
 output "vnet_id" { value = module.network.vnet_id }
 output "private_subnet_id" { value = module.network.private_subnet_id }
