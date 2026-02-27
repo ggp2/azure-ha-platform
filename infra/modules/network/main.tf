@@ -26,7 +26,7 @@ resource "azurerm_subnet" "private" {
   address_prefixes     = [var.subnet_private_cidr]
 }
 
-# NSG du subnet privé : autorise HTTP depuis Azure Load Balancer (utile plus tard)
+# NSG du subnet privé : autorise HTTP depuis Azure Load Balancer
 resource "azurerm_network_security_group" "nsg_private" {
   name                = "${var.name_prefix}-nsg-private"
   location            = var.location
