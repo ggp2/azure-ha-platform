@@ -18,7 +18,7 @@ Infrastructure entièrement automatisée via \*\*Terraform\*\* et déployée via
 ## 🏗 Architecture
 
 <p align="center">
-  <img src="docs/AZURE.png" width="2400">
+  <img src="docs/AZURE.png" width="800">
 </p>
 
 ```
