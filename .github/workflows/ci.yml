@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./app
-	  file: ./app/Dockerfile
+          file: ./app/Dockerfile
           push: true
           tags: ghcr.io/ggp2/azure-ha-platform:latest
