@@ -11,7 +11,7 @@
 **/*_override.tf
 **/*_override.tf.json
 
-# Variables (si tu veux éviter de push des secrets)
+# Variables (BUT: éviter de push des secrets)
 **/*.tfvars
 
 # OS
